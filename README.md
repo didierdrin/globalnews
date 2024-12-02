@@ -42,3 +42,6 @@ A symbolic link was then created in /etc/nginx/sites-enabled/ named GlobalNews u
 
 HAProxy
 In the load balancing configuration, two servers, web01 and web02, were set up to handle incoming requests. Routing was configured so that based on specific routes, the requests were forwarded to the appropriate server, ensuring efficient load distribution and seamless access to the application.
+
+Demo video 
+>> https://youtu.be/xgjQCMz3-Nk?si=cQgzw7kfzhKsXjk_
