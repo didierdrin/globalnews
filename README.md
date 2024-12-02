@@ -6,7 +6,7 @@ GlobalNews is a web-based application that fetches real-time news articles from 
 Website URL
 >> https://didierdrin.github.io/globalnews
 
-Reason (Problem Solving)
+Benefits
 I developed GlobalNews to provide users with easy access to the latest news articles in a simple and intuitive way. Whether it’s breaking news or trending topics, GlobalNews helps users find the information they need quickly, without having to search across multiple sources.
 
 Features
@@ -35,4 +35,10 @@ APIs Used:
 NewsNow API: Fetches real-time news articles based on topics and regions.
 
 Deployment:
-The application is hosted using a simple static server. The data is fetched dynamically from the NewsNow API via JavaScript (Axios).
+Nginx
+For deployment, the scp command was used to transfer the project files from the local machine to the server. A new directory called GlobalNews was created under /var/www/, which was then referenced in the Nginx configuration file located at /etc/nginx/sites-available/GlobalNews. This directory is set as the root to serve the HTML files.
+
+A symbolic link was then created in /etc/nginx/sites-enabled/ named GlobalNews using the ln -s command, ensuring that the server knows where to look for the website files.
+
+HAProxy
+In the load balancing configuration, two servers, web01 and web02, were set up to handle incoming requests. Routing was configured so that based on specific routes, the requests were forwarded to the appropriate server, ensuring efficient load distribution and seamless access to the application.
