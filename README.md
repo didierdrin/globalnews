@@ -4,7 +4,7 @@ Description
 GlobalNews is a web-based application that fetches real-time news articles from various global sources. The app allows users to search for news based on topics, ensuring they stay up-to-date with the latest happenings around the world.
 
 Website URL
-[Insert your project URL here]
+>> https://didierdrin.github.io/globalnews
 
 Reason (Problem Solving)
 I developed GlobalNews to provide users with easy access to the latest news articles in a simple and intuitive way. Whether it’s breaking news or trending topics, GlobalNews helps users find the information they need quickly, without having to search across multiple sources.
